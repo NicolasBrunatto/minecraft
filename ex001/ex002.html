@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+        }
+        
+        body
+        {
+            background-color: rgb(89, 0, 116);
+        }
+        main
+        {
+            background-color: white;
+            border-radius: 10px;
+            height: 170px;
+            width: 70vw;
+            margin: 10vw;            
+            padding: 20px;
+           
+            h1
+            {
+                text-align: center;
+                margin: .8em 0px;
+            } 
+                       
+        }
+        #DIVinputs
+        {
+            margin: auto 10%;
+        }
+        input
+        {
+            margin: 0px 2px;
+        }
+        
+    </style>
+
+</head>
+    <body>
+        <main>
+            <h1>Soma legal</h1>
+            <div id="DIVinputs">
+                <input type="number" name="num1" id="num1">
+                <input type="number" name="num2" id="num2">
+                <input type="button" value="Somar" onclick="soma()">
+            </div>
+            <div >
+                Resultado: <p id="res" style="display: inline-block;">  </p>
+            </div>
+            <script>
+                function soma()
+                {
+                    var tn1 = document.getElementById('num1')
+                    var n1 = Number(tn1.value)
+                    var tn2 = document.getElementById('num2')
+                    var n2 = Number(tn2.value)
+                    var somado = n1 + n2
+                    var res = document.getElementById('res')
+                    res.innerHTML = `O resultado da soma é <strong> ${somado}</strong>`
+                }
+            </script>
+        
+        </main>
+</body>
+</html>

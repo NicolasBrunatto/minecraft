@@ -8,11 +8,23 @@
     <style>
         body
         {
-            color: white;
-            background-color: lightskyblue;
             font-family: 'Times New Roman', Times, serif;
         
         }
+        div:hover
+        {
+            background-color: lightblue;
+        }
+        div
+        {
+            border: black solid 1px;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+   
+            display: inline-block;
+        }
+
         h1
         {
             
@@ -21,19 +33,56 @@
 
         }
 
-
-
     </style>
 </head>
-<body>
-
-    <script>
-        window.alert('you just enmtered a bad place!');
-    </script>
-    
-    
+<body>  
     <h1>Look At This Crazy Stuff!</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non eaque, eius animi illum aspernatur sequi quasi rerum doloremque id numquam nesciunt officia nobis laboriosam ipsa, earum quis? Modi, voluptas tenetur.</p>
+    <p>paragrafo 2</p>
+
+    <div id="cor1">
+        <p>azul</p>
+    </div>
+    <div id="cor2">
+        <p>verde</p>
+    </div>
+    <div id="cor3">
+        <p>roxo</p>
+    </div>
+
+    
+
+    <script>
+        var BG = document.getElementsByTagName('body')[0]
+                
+        var bg1 = document.getElementById('cor1')
+        bg1.addEventListener('click', clicar)
+        var bg2 = document.getElementById('cor2')
+        bg2.addEventListener('click', clicar2)
+        var bg3 = document.getElementById('cor3')
+        bg3.addEventListener('click', clicar3)
+
+        function clicar()
+        {
+            
+            BG.style.backgroundColor = 'blue'
+            BG.style.color = "white"
+            
+        }
+        function clicar2()
+        {
+            
+            BG.style.backgroundColor = 'green'
+            BG.style.color = "white"
+        }
+        function clicar3()
+        {
+            
+            BG.style.backgroundColor = 'purple'
+            BG.style.color = "white"
+        }
+    
+    </script>
     
 </body>
 </html>
