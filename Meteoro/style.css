@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Sick1';
+    src: url('Fonts/Apocalypse\ Grunge.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Sick2';
+    src: url('Fonts/Prodigy\ Forever.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Regular';
+    src: url('Fonts/Komika.ttf') format('opentype');
+}
+
+body
+{
+    background-color: rgb(26, 26, 26);
+}
