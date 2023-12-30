@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BHASKARA</title>
+
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            background-color: teal;
+        }
+        header{
+        
+        }
+        main{
+            background-color: white;
+            font-size: 2em;
+            margin: 0px 10vw;
+            padding: 5vh 30px;
+            height: 100vh;
+ 
+        }
+        h1{
+            text-align: center;
+            padding: 10px;
+            font-variant: small-caps;
+            font-size: 4em;
+        }
+        input{
+            width: 20px;
+            margin: 5px auto 5px auto;
+        }
+
+        input#resultado{
+            width: auto;
+            margin: 5px auto 5px auto;
+        }
+        p#valoresX strong{
+            font-weight: normal;
+            border: black solid 1px;
+            padding: 5px;
+        }
+        div#Div_valoresX{ 
+           padding: 15px;
+
+        }
+
+        .botao {
+            background-color: white;
+            border: black solid 1px;
+            padding: 16px;
+            font-size: 1.5em;
+            border-radius: 10px;
+
+        }
+        .botao:hover{
+            transition-duration: 0.1s;
+            color: white;
+            background-color: rgb(50, 50, 50);
+            
+        }
+         
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Bhaskara é Muito Chato</h1> <hr>
+    </header>
+    
+    <main>
+        <div>
+            <p>Digite os valores de <strong>A</strong>, <strong>B</strong> e <strong>C</strong></p>
+            <input type="text" id="Va">x&#178 + <input type="text" id="Vb">x + <input type="text" id="Vc"> <br>
+            <input class="botao" id="resultado" type="button" value="calcular" onclick="calcular()">
+            <div id="Div_valoresX">
+                <p id="valoresX"></p>
+            </div>
+        </div>
+        <br>
+        
+        
+        <script>
+            function calcular()
+            {
+                var txtVa = document.getElementById("Va")
+                var txtVb = document.getElementById("Vb")
+                var txtVc = document.getElementById("Vc")
+                var a = Number(txtVa.value)
+                var b = Number(txtVb.value)
+                var c = Number(txtVc.value)
+                var resultadosX = document.getElementById("valoresX")
+                var x1
+                var x2
+                var delta
+                delta = (b**2)- 4*a*c
+                if (delta < 0)
+                {
+                    valoresX.innerHTML = `resolver dps` 
+                }else
+                {
+                    x1 = ((-b) + Math.sqrt(delta))/2*a
+                    x2 = ((-b) - Math.sqrt(delta))/2*a
+                    valoresX.innerHTML = `x1: <strong> ${x1}</strong> x2: <strong>${x2}</strong>`
+                }
+            }
+        </script>
+    </main>
+</body>
+</html>

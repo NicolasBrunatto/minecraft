@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    body{
+        text-align: center;
+    }
+    div{
+        margin: 20px;
+    }
+    input{
+        font-size: 4em;
+        background-color: rgb(105, 162, 105);
+        border: none;
+        padding: 16px;
+    }
+    input:hover{
+        transition-duration: .1s;
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.379);
+    }
+
+    #button2{
+        font-size: 4em;
+        background-color: rgb(255, 164, 66);
+        border: none;
+        padding: 16px;
+        display: inline-block;
+        text-align: center;
+        width: 500px;
+        
+    }
+
+    #button2 span{
+        display: inline-block;
+        position: relative;
+    }
+    #button2:hover span{
+        transition-duration: 0.2s;
+        padding-right: 40px;
+    }
+    #button2 span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+    }
+    #button2:hover span:after {
+        opacity: 1;
+        right: 0;
+        transition: 0.2s;
+    }
+    #button3{
+        background-color: hsl(219, 79%, 66%);
+        color: white;
+        padding: 20px;
+        font-size: 4em;
+        border-radius: 50%;
+        border: none;
+        box-shadow:0px 10px rgb(166, 166, 166);
+    }
+    #button3:hover{
+        background-color:  hsl(219, 79%, 36%);
+    }
+    #button3:active{
+        transform: translate(0px , 4px);
+        box-shadow:0px 6px hsl(0, 0%, 35%); ;
+    }
+    
+</style>
+
+</head>
+<body>
+    <div><input type="button" value="botao legau"></div>
+    <div><button id="button2" style="vertical-align: middle;"><span>botao2 </span></button></div>
+    <div><button id="button3">Botao3</button></div>
+</body>/
+</html>
