@@ -1,9 +1,28 @@
-var velocidade
-var distancia
-var deltaT
+var semana = new Date()
+var diaS = semana.getUTCSeconds()
 
-distancia = 60
-deltaT = 0.5
 
-velocidade = distancia/deltaT
-console.log(`a velocidade é ${velocidade} km/h `)
+    switch(diaS)
+    {
+        case 0:
+            console.log('hj é domingo')
+            break
+        case 1:
+            console.log('hj é segunda')
+            break
+        case 2:
+            console.log('hj é terça')
+            break
+        case 3:
+            console.log('hj é qarta')
+            break
+        case 4:
+            console.log('hj é quinta')
+            break
+        case 5:
+            console.log('hj é sexta')
+            break
+        case 6:
+            console.log('hj é sábado')
+            break
+    }

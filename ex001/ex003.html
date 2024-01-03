@@ -14,23 +14,25 @@
         body{
             background-color: teal;
         }
-        header{
-        
-        }
         main{
             background-color: white;
             font-size: 2em;
             margin: 0px 10vw;
-            padding: 5vh 30px;
+            padding: 10px 30px;
             height: 100vh;
  
+        }
+        #principal{
+            display: flex;
         }
         h1{
             text-align: center;
             padding: 10px;
             font-variant: small-caps;
             font-size: 4em;
+            color: white;
         }
+        
         input{
             width: 20px;
             margin: 5px auto 5px auto;
@@ -43,13 +45,12 @@
         p#valoresX strong{
             font-weight: normal;
             border: black solid 1px;
-            padding: 5px;
+            padding: 0px 5px;
+        
         }
-        div#Div_valoresX{ 
-           padding: 15px;
-
+        p{
+            margin-top: 20px;
         }
-
         .botao {
             background-color: white;
             border: black solid 1px;
@@ -64,6 +65,15 @@
             background-color: rgb(50, 50, 50);
             
         }
+        #calculos{
+            width:50%;
+        }
+        #grafico{
+            border: black solid 1px;
+            width: 50%  ;
+            padding: 5px;
+            height: 50vh;
+        }
          
     </style>
 
@@ -74,42 +84,20 @@
     </header>
     
     <main>
-        <div>
-            <p>Digite os valores de <strong>A</strong>, <strong>B</strong> e <strong>C</strong></p>
-            <input type="text" id="Va">x&#178 + <input type="text" id="Vb">x + <input type="text" id="Vc"> <br>
-            <input class="botao" id="resultado" type="button" value="calcular" onclick="calcular()">
-            <div id="Div_valoresX">
+        <section id="principal">
+            <div id="calculos">
+                <h2>Cálculos</h2>
+                <p>Digite os valores de <strong>A</strong>, <strong>B</strong> e <strong>C</strong></p>
+                <input type="text" id="Va">x&#178 + <input type="text" id="Vb">x + <input type="text" id="Vc"> <br>
+                <input class="botao" id="resultado" type="button" value="calcular" onclick="calcular()">
                 <p id="valoresX"></p>
+                <p id="vertices"></p>
             </div>
-        </div>
-        <br>
-        
-        
-        <script>
-            function calcular()
-            {
-                var txtVa = document.getElementById("Va")
-                var txtVb = document.getElementById("Vb")
-                var txtVc = document.getElementById("Vc")
-                var a = Number(txtVa.value)
-                var b = Number(txtVb.value)
-                var c = Number(txtVc.value)
-                var resultadosX = document.getElementById("valoresX")
-                var x1
-                var x2
-                var delta
-                delta = (b**2)- 4*a*c
-                if (delta < 0)
-                {
-                    valoresX.innerHTML = `resolver dps` 
-                }else
-                {
-                    x1 = ((-b) + Math.sqrt(delta))/2*a
-                    x2 = ((-b) - Math.sqrt(delta))/2*a
-                    valoresX.innerHTML = `x1: <strong> ${x1}</strong> x2: <strong>${x2}</strong>`
-                }
-            }
-        </script>
+            <div id="grafico">
+                <h2>Gráfico</h2>  
+            </div>
+        </section>
+        <script src="bhaskara.js"></script>
     </main>
 </body>
 </html>

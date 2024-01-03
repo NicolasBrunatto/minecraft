@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        :root{
+            --cor1: rgb(208, 169, 16);
+            --cor2: #fff;
+        }
+        header{
+            color: var(--cor2);
+        }
+        h1{
+            padding: 20px;
+        }
+        body{
+            background-color:var(--cor1);
+        }
+        main{
+            background-color: var(--cor2);
+            margin: 0px 20vw;
+            padding: 20px;
+            box-shadow: 6px 8px 5px rgba(1, 1, 1, 0.35);
+        }
+        main p{
+            padding: 20px;
+            font-size: 2em;
+        }
+        img{
+            border-radius: 50%;
+        }
+        footer{
+            padding: 20px;
+        }
+        footer > a{
+            color: white;
+        }
+    </style>
+</head>
+<body onload="hora()">
+    <header>
+        <h1>Hora Do Dia</h1>
+    </header>
+    <main>
+        <section>
+            <p id="hora"></p>
+            <img id="image" src="imgs/morning.jpg" alt="cago">
+            <p id="Periodo"></p>
+        </section>
+    </main>
+    <footer><a href="#">Nota de rodapé legal</a></footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

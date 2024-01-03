@@ -7,6 +7,8 @@
 <style>
     body{
         text-align: center;
+        background-color: rgb(54, 32, 51);
+       
     }
     div{
         margin: 20px;
@@ -16,12 +18,14 @@
         background-color: rgb(105, 162, 105);
         border: none;
         padding: 16px;
+        transition: transform .1s;
     }
     input:hover{
-        transition-duration: .1s;
-        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.379);
+        transform: translateZ(30px);  
+        box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.379);  
+        
     }
-
+    
     #button2{
         font-size: 4em;
         background-color: rgb(255, 164, 66);
@@ -40,6 +44,7 @@
     #button2:hover span{
         transition-duration: 0.2s;
         padding-right: 40px;
+
     }
     #button2 span:after {
         content: '\00bb';
@@ -69,13 +74,33 @@
         transform: translate(0px , 4px);
         box-shadow:0px 6px hsl(0, 0%, 35%); ;
     }
-    
+    #button4{
+        font-size: 4em;
+        background-color:   rgb(50, 174, 176) ;
+        border: none;
+        border-radius: 10px;
+        padding: 16px;
+        display: inline-block;
+        text-align: center;
+        width: 400px;
+        transition-property: box-shadow;
+    }
+    #button4:hover{
+        -webkit-box-shadow:0px 0px 162px 20px rgba(66,212,212,0.91);
+        -moz-box-shadow: 0px 0px 162px 20px rgba(66,212,212,0.91);
+        box-shadow: 0px 0px 162px 20px rgba(66,212,212,0.91);
+        transition-duration: 0.3s;
+    }
+    #button4:active{
+        color: white;
+    }
 </style>
 
 </head>
 <body>
-    <div><input type="button" value="botao legau"></div>
+    <div style="background-color: white; padding: 30px; perspective: 1000px;"><input type="button" value="botao legau"></div>
     <div><button id="button2" style="vertical-align: middle;"><span>botao2 </span></button></div>
     <div><button id="button3">Botao3</button></div>
+    <div><button id="button4">Botao4</button></div>
 </body>/
 </html>

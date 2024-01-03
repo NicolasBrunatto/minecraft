@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #292929;
+        }
+        a{
+            position: relative;
+           
+            font-size: 30px;
+            color: rgb(255, 255, 255); 
+            text-decoration: none;
+            height: 100px;
+            width: 200px;          
+            transition: all .5s;
+            text-align: center;
+            line-height: 100px;
+        }
+        a::before{
+            position: absolute;
+            content: '';
+            width: 200px;
+            height: 140px;
+            top: -20px;
+            left: 0;
+            border-left: rgb(122, 225, 122) solid 2px;
+            border-right: rgb(122, 233, 255) solid 2px;
+            transition: all .5s;
+            
+        }
+        a::after{
+            position: absolute;
+            content: '';
+            width: 240px;
+            height: 100px;
+            top: 0px;
+            left: -20px;
+            border-top: rgb(122, 225, 122) solid 2px;
+            border-bottom: rgb(122, 233, 255) solid 2px;
+            transition: all .5s;
+            
+        }
+        a:hover::before{
+            
+            transform: rotateY(180deg);
+        }
+        a:hover::after{
+            
+            transform: rotateX(180deg);
+        }
+    </style>
+</head>
+<body>
+    <a href="#">Button</a>
+</body>
+</html>

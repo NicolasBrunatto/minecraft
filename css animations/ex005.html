@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #292929;
+        }
+        button{
+            position: relative;
+            color: white;
+            background-color: teal;
+            font-size: 45px;
+            width: 200px;
+            height: 100px;
+        }
+        button::before{
+            position: absolute;
+            content:'';
+            border-top: teal solid 3px;
+            border-left: teal solid 3px;
+            border-top: teal solid 3px;
+            border-left: teal solid 3px;
+            top:-10%;
+            left: -5%;
+            width: 15%;
+            height: 30%;
+            transition: all .5s;
+        }
+        button::after{
+            position: absolute;
+            content:'';
+            border-bottom: teal solid 3px;
+            border-right: teal solid 3px;
+            bottom:-10%;
+            right: -5%;
+            width: 15%;
+            height: 30%;
+            transition: all .5s;
+        }
+        button:hover::before, button:hover::after{
+            width: 80%;
+            height: 80%;
+        }
+    </style>
+</head>
+<body>
+    <button>alo?</button>
+</body>
+</html>

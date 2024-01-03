@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn1{
+            font-size: 30px;
+            background-color: transparent;
+            width: 600px;
+            color: white;
+            border: none;
+            position: relative;
+            padding: 40px 80px ;
+            transition: all.5s;
+        }
+        .btn1::before{
+            content: '';
+            position: absolute;
+            background-color: rgba(0, 182, 173, 1);
+            width: 98%;
+            height: 90%;
+            top: 0;
+            left: 0;
+            transform-origin: top center;
+            transition: all .5s;
+            z-index: -1;
+            mix-blend-mode: multiply;
+        }
+        .btn1::after{
+            content: '';
+            position: absolute;
+            background-color: rgba(255, 104, 104, 1);
+            width: 98%;
+            height: 90%;
+            bottom: 0;
+            right: 0;
+            transform-origin: bottom center;
+            transition: all .5s;
+            z-index: -1;
+            mix-blend-mode:multiply;
+        }
+        .btn1:hover{
+            color: black;         
+        }
+        .btn1:hover::before{
+            transform: rotateX(180deg);
+        }
+        .btn1:hover::after{
+            transform: rotateX(-180deg);
+        }
+    </style>
+</head>
+<body>
+    <button class="btn1" href="#">butao</button>
+</body>
+</html>
