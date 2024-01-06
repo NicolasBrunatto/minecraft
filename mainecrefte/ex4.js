@@ -6,9 +6,6 @@ function Get_mes(Mes) {
     const meses = ['Janeiro', 'Fevereiro', 'Abril', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
     return meses[Mes]
 }
-function getUtcTime(num) {
-    return Number(num)+3
-}
 
 function formataData(data) {
     const dia = zeroEsquerda(data.getDate())
@@ -18,13 +15,9 @@ function formataData(data) {
     const min = zeroEsquerda(data.getMinutes())
     const seg = zeroEsquerda(data.getSeconds())
 
-    const horaUTC = getUtcTime(hora)
-
     return `Hoje é ${dia}/${mes}/${ano} ${hora}:${min}:${seg}`
 }
 
 const data = new Date()
 const dataBrasil = formataData(data)
 console.log(dataBrasil)
-
-//teste GIT
