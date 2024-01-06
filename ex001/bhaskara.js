@@ -18,7 +18,7 @@ function calcular()
     
     if (delta < 0)
     {
-        valoresX.innerHTML = `x = (${-b} +- sqrt(${delta}))/${2*a}`
+        valoresX.innerHTML = `x = (${-b} +- ${-delta}i)/${2*a}`
     }else
     {
         x2 = ((-b) + Math.sqrt(delta))/2*a

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1
+        {
+            text-align: center;
+            font-size: 5em;
+            text-transform: uppercase;
+            margin-bottom: 25vh;
+        }
+        table
+        {
+            margin: auto;
+            border: black solid 3px;
+            border-collapse: collapse;
+            font-size: 2em;  
+        }
+        td
+        {
+            border: black solid 1px;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <label for="height">alutra:</label>
+        <input id="height" type="text">
+        <label for="width">largura:</label>
+        <input id="width" type="text">
+        <button type="submit">draw table</button>
+    </form>
+
+    <div id="tabela">
+
+    </div>
+    
+    <script src="tabela.js"></script>
+</body>
+</html>
