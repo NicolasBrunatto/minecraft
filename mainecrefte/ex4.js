@@ -26,3 +26,5 @@ function formataData(data) {
 const data = new Date()
 const dataBrasil = formataData(data)
 console.log(dataBrasil)
+
+//teste GIT
