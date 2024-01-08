@@ -18,10 +18,7 @@ function createElementsHTML(c)
         container.appendChild(writing)
 }
 
-for (let c = 0; c < escrever.length; c++) {
+for (const c in escrever) {
     createElementsHTML(c)
-}
-
-
-    
+}    
 
