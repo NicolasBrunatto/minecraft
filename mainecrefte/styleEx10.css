@@ -32,7 +32,7 @@ li{
 }
 
 #lista{
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
     background-color: white;
@@ -53,4 +53,13 @@ button:hover{
 input {
     height: 26px;
     margin-bottom: 20px;
+}
+
+li{
+    position: relative;
+}
+li > button{
+    position: absolute;
+    margin-left: 10px;
+    margin-top: 5px;
 }
