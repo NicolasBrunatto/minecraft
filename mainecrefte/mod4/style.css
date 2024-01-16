@@ -24,6 +24,7 @@ section {
     background-color: transparent;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 table {
@@ -34,16 +35,15 @@ table {
 td {
     width: 80px;
     height: 80px;
+    padding: 2px;
+    
 }
 #display{
-    font-size: 3em;
+    font-size: 2em;
     text-align: right;
     padding-right: 20px;
-    height: 100%;
     background-color: rgb(31, 129, 108);
     border: none;
-}
-input{
     height: 100%;
     width: 100%;
 }
@@ -53,7 +53,7 @@ button {
     width: 100%;
     padding: 5px;
     background-color: rgb(103, 43, 243);
-    border: black solid 1px;
+    border: none;
 }
 button:hover{
     background-color: var(--cor2);
