@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background: black;
+            height: 100%;
+            overflow: hidden;
+        }
+        body{
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            position: relative;
+        }
+        canvas{   
+            filter: blur(1.5px);
+            position: fixed;
+            position: absolute;
+            top:-5;
+          transform: rotateX(40deg) rotateY(13deg) rotateZ(321deg) scale(2) translateY(-20%);
+            z-index: -1;
+            
+        }
+        main{
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+   
+    <main>
+        <h1>TESTE</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsam itaque, doloribus quos eaque quod quo, eum tempora non deleniti cum magnam? Rem nostrum aperiam consectetur ullam delectus non. Animi?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, cumque, et praesentium odit nostrum veniam reprehenderit repellat, hic amet nemo deleniti dolorem quasi quidem possimus sit magnam! Incidunt, quia accusantium.</p>
+        
+    </main>
+    <canvas id="matrixCanvas"></canvas>
+    <script src="background.js"></script>
+</body>
+</html>
