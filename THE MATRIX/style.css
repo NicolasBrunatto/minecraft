@@ -14,7 +14,6 @@
 html {
     background: black;
     height: 100%;
-    overflow: hidden;
 }
 
 body {
@@ -22,6 +21,7 @@ body {
     padding: 0;
     height: 100%;
     position: relative;
+    
 }
 
 canvas {
@@ -31,6 +31,9 @@ canvas {
     top: -5px;
     transform: rotateX(40deg) rotateY(13deg) rotateZ(321deg) scale(2) translateY(-20%);
     z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 main {
@@ -40,6 +43,7 @@ main {
 }
 
 .container {
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -84,4 +88,11 @@ button:hover {
     text-align: center;
 }
 
+.btn2:hover{
+    text-decoration: none;
+}
+#buttonsMatrix{
+    position: absolute;
+    top: 100%;
+}
 
