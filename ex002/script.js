@@ -1,6 +1,7 @@
 function hora()
 {
-    var Get_Dia = new Date()
+    const Get_Dia = new Date()
+    console.dir(Get_Dia)
     var horadia = Get_Dia.getHours()
     var txtHorario = document.getElementById('hora')
 
@@ -28,3 +29,4 @@ function hora()
         txtPeriodoDia.innerHTML = 'Bom dia!'
     } 
 }
+
